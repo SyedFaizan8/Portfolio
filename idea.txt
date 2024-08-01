@@ -1,0 +1,19 @@
+card hover effect (acertinity) -boxes hover
+direction aware hover (acertinity) -direction aware for divs
+Flip words (acertinity) - words comes with air effect
+Grid and dot background (acertinity) - grid bg behind any boxes
+hover border Gradient (acertinity) - buttons or div background shine
+Infinity moving cards (acertinity) - moving cards
+Link preview (acertinity) - for links
+Placeholder and vanish input (acertinity) - forms 
+Signup form (acertinity) - forms
+sparkles (acertinity) - sparkles below text
+Text generate effect (acertinity) - text 
+tailwind css buttons (acertinity) - buttons
+Tracking beam (acertinity) - scroll wheel
+typewriter effect (acertinity) - text
+vortex (acertinity) - bg flying sprinkles 
+Wobble card (acertinity) - for divs in grid
+Meteors (acertinity) - Meteors in divs
+
+separator from (shadcn)
