@@ -95,4 +95,5 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
+
 export default config
