@@ -2,13 +2,25 @@
 
 import Cards from "@/components/Cards";
 import { ContactMe } from "@/components/ContactMe";
-import Earth from "@/components/Earth";
+// import Earth from "@/components/Earth";
 import GeminiEffect from "@/components/GeminiEffect";
 import HeroSection from "@/components/HomeSection";
 import { Profile } from "@/components/Profile";
 import WavyBgFooter from "@/components/WavyBgFooter";
+import { useEffect } from 'react';
 
 export default function Home(): JSX.Element {
+
+  useEffect(() => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
+
+
   return (
     <>
 
@@ -22,10 +34,8 @@ export default function Home(): JSX.Element {
             <ContactMe id="contact" />
           </div>
         </div>
-        <Earth />
+        {/* <Earth /> */}
       </div >
-
-      <WavyBgFooter id="target" />
     </>
   );
 }

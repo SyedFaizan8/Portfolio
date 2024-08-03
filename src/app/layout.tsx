@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import WavyBgFooter from '@/components/WavyBgFooter';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,6 +16,8 @@ interface RootLayoutProps {
 }
 
 export default async function RootLayout({ children }: RootLayoutProps) {
+
+
   return (
     <html lang="en" >
       <body className={inter.className}>
@@ -22,6 +25,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           <Navbar />
         </div>
         {children}
+        <footer>
+          <WavyBgFooter id="target" />
+        </footer>
       </body>
     </html>
   );

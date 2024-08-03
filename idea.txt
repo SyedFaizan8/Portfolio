@@ -2,3 +2,6 @@ Link preview (acertinity) - for links
 photo section
 add deserved fonts 
 setup env Email service
+fix earth
+
+add Readme to the github
