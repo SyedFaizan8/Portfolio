@@ -32,9 +32,9 @@ export default function Earth() {
     };
     const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
 
-    const Lat: number = 12.971599;
+    const Lat: number = 12.971599 as number;
 
-    const Lng: number = 77.594566;
+    const Lng: number = 77.594566 as number;
 
     const sampleArcs = [
         {

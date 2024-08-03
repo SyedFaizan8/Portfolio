@@ -1,13 +1,4 @@
-card hover effect (acertinity) - boxes hover
-direction aware hover (acertinity) - direction aware for divs
-Grid and dot background (acertinity) - grid bg behind any boxes
-Infinity moving cards (acertinity) - moving cards
 Link preview (acertinity) - for links
-Placeholder and vanish input (acertinity) - forms 
-Signup form (acertinity) - forms
-tailwind css buttons (acertinity) - buttons
-vortex (acertinity) - bg flying sprinkles 
-Wobble card (acertinity) - for divs in grid
-Meteors (acertinity) - Meteors in divs
-
-sparkles (acertinity) - sparkles below text
+photo section
+add deserved fonts 
+setup env Email service
