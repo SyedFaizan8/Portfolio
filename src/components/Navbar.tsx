@@ -4,11 +4,10 @@ import { Link } from "react-scroll"
 
 const Navbar = () => {
   return (
-    <div className="text-white drop-shadow-lg bg-opacity-10 backdrop-blur-sm fixed flex top-4 space-x-5 justify-center items-center w-1/3 z-50 bg-black rounded-r-full rounded-l-full py-2">
+    <div className="from-neutral-200 to-neutral-500  font-bold drop-shadow-lg bg-opacity-10 backdrop-blur-sm fixed flex top-4 space-x-5 justify-center items-center w-1/3 z-50 bg-black rounded-r-full rounded-l-full py-2">
       <Link
         to="home"
         smooth="easeInOutQuad"
-        offset={0}
         duration={1000}
       >
         <button>Home</button>
@@ -16,7 +15,6 @@ const Navbar = () => {
       <Link
         to="project"
         smooth="easeInOutQuad"
-        offset={0}
         duration={1000}
       >
         <button>Projects</button>
@@ -24,7 +22,6 @@ const Navbar = () => {
       <Link
         to="about"
         smooth="easeInOutQuad"
-        offset={0}
         duration={1000}
       >
         <button>About Me</button>
@@ -32,7 +29,6 @@ const Navbar = () => {
       <Link
         to="contact"
         smooth="easeInOutQuad"
-        offset={0}
         duration={1000}
       >
         <button>Contact</button>

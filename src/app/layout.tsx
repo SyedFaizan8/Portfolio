@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import WavyBgFooter from '@/components/WavyBgFooter';
 
 const inter = Inter({ subsets: ['latin'] });
+const play = Playfair_Display({ subsets: ['latin'], variable: "--font_play" });
 
 export const metadata: Metadata = {
   title: 'Syed Faizan - Professional Portfolio | Software Engineer',
@@ -20,13 +21,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <html lang="en" >
-      <body className={inter.className}>
-        <div className='relative w-full flex justify-center'>
+      <body className={`${inter.className}  ${play.variable}`}>
+        <nav className='relative w-full flex justify-center'>
           <Navbar />
-        </div>
+        </nav>
         {children}
         <footer>
-          <WavyBgFooter id="target" />
+          <WavyBgFooter />
         </footer>
       </body>
     </html>

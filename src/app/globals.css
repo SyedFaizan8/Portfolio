@@ -92,7 +92,7 @@
 /* Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #4a5568 #333; /*Thumb color and track color */
+  scrollbar-color: #4a5568; /*Thumb color and track color */
 }
 
 /* Ensure body has a black background */

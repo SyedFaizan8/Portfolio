@@ -1,7 +1,6 @@
-Link preview (acertinity) - for links
-photo section
-add deserved fonts 
-setup env Email service
-fix earth
+make it responsive
 
+
+fix photo 
+launch it on vercel
 add Readme to the github
