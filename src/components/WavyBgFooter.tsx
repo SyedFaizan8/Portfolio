@@ -60,7 +60,7 @@ export default function WavyBgFooter() {
                             <BottomGradient />
                         </a>
                         <a
-                            href="https://www.github.com/SyedFaizan8"
+                            href="https://www.instagram.com/syedfaizan.8?igsh=MW5rNmVtcDhjMjBydA=="
                             target="_blank"
                             rel="noopener noreferrer"
                             className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
