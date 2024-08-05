@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/favicon
 .pnp.js
 .yarn/install-state.gz
 

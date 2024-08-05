@@ -1,7 +1,0 @@
-make it responsive
-
-fix photo 
-launch it on vercel
-
-
-add Readme to the github
