@@ -7,65 +7,67 @@ import { IconBrandGithub } from "@tabler/icons-react";
 
 export default function Cards({ id }: { id: string }) {
     return (
-        <div id={id} className=" w-full h-auto from-neutral-200 to-neutral-500">
-            <div className="text-5xl  py-10 sm:text-7xl font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-center">Projects </div>
-            <div className="grid px-16 grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+        <div id={id} className=" w-full  py-16 h-auto from-neutral-200 to-neutral-500">
+            <div className="text-5xl pb-8 px-10 font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-start">
+                Projects
+            </div>
+            <div className="grid px-10 grid-cols-1 gap-10 w-full">
                 <WobbleCard
-                    containerClassName="col-span-1 lg:col-span-2 bg-black min-h-[300px] lg:min-h-[150px]"
-                    className=""
+                    containerClassName="col-span-1 relative bg-black h-[300px] "
                 >
-                    <div className="max-w-xs">
-                        <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em]">
+                    <div className="grid grid-cols-2">
+                        <h2 className="col-span-2 text-left text-lg font-semibold tracking-[-0.015em]">
                             Simplified version of classic Pacman game.
                         </h2>
-                        <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                            Technologies used: C, OpenGL Utility Toolkit (GLUT) Library.
-                        </p>
-                        <a
-                            href="https://www.github.com/SyedFaizan8"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="relative group/btn flex  items-center justify-start px-2 space-x-1 w-auto mt-4 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-                        >
-                            <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                            <span className="text-white text-sm">Github | Find the code here </span>
-                            <BottomGradient />
-                        </a>
+                        <div className="col-span-1">
+                            <p className="mt-4 text-left text-sm text-neutral-200">
+                                Technologies used: C, OpenGL Utility Toolkit (GLUT) Library.
+                            </p>
+                            <a
+                                href="https://www.github.com/SyedFaizan8"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className=" relative group/btn flex  items-center justify-start px-2 space-x-1 w-28 mt-10 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            >
+                                <IconBrandGithub className="h-4 w-4 text-neutral-300" />
+                                <span className="text-white text-sm">Github <span className="hidden">| Find the code here</span> </span>
+                                <BottomGradient className="hidden" />
+                            </a>
+                        </div>
+                        <Image
+                            src="/pacman.png"
+                            width={400}
+                            height={400}
+                            alt=""
+                            className="col-span-1 absolute h-56 w-56 -right-1 contrast-100 brightness-100 -bottom-10 rounded-lg"
+                        />
                     </div>
-                    <Image
-                        src="/pacman.png"
-                        width={350}
-                        height={350}
-                        alt=""
-                        className="absolute -right-2 contrast-100 brightness-100 -bottom-10 rounded-xl"
-                    />
-
                 </WobbleCard>
-                <WobbleCard containerClassName="bg-black col-span-1 min-h-[150px]">
-                    <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                <WobbleCard containerClassName="col-span-1 relative bg-black h-[250px]">
+                    <h2 className="text-left text-lg font-semibold tracking-[-0.015em]">
                         WhatsApp Analyzer
                     </h2>
-                    <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                    <p className="mt-4 text-left text-sm text-neutral-200">
                         Analyzes the messages of group chats and individual chats, showing counts.
                     </p>
                     <a
                         href="https://www.github.com/SyedFaizan8"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="relative group/btn flex  items-center justify-start px-2 space-x-1 w-auto mt-4 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-10 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                     >
                         <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                        <span className="text-white text-sm">Github | Find the code here </span>
-                        <BottomGradient />
+                        <span className="text-white text-sm">Github <span className="hidden">| Find the code here</span> </span>
+                        <BottomGradient className="hidden" />
                     </a>
 
                 </WobbleCard>
-                <WobbleCard containerClassName="bg-black col-span-1 lg:col-span-3 min-h-[300px] lg:min-h-[400px] xl:min-h-[300px]">
-                    <div className="max-w-sm">
-                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                <WobbleCard containerClassName="col-span-1 relative bg-black h-[550px]">
+                    <div className="">
+                        <h2 className="text-left text-lg font-semibold tracking-[-0.015em]">
                             A web application to track the full supply chain from farmer to consumer using Ethereum blockchain.
                         </h2>
-                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                        <p className="mt-4 text-left text-sm text-neutral-200">
                             Solved issues related to decentralization, tamper-resistance, and higher transparency in the supply chain.
                             Technologies used: React.js, Tailwind CSS, Solidity, Hardhat, Ganache, Meta-Mask.
 
@@ -74,11 +76,11 @@ export default function Cards({ id }: { id: string }) {
                             href="https://www.github.com/SyedFaizan8"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="relative group/btn flex  items-center justify-start px-2 space-x-1 w-auto mt-4 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-4 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
                             <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                            <span className="text-white text-sm">Github | Find the code here </span>
-                            <BottomGradient />
+                            <span className="text-white text-sm">Github <span className="hidden">| Find the code here</span> </span>
+                            <BottomGradient className="hidden" />
                         </a>
                     </div>
                     <Image
@@ -94,11 +96,11 @@ export default function Cards({ id }: { id: string }) {
     );
 }
 
-const BottomGradient = () => {
+const BottomGradient = ({ className }: { className: string }) => {
     return (
         <>
-            <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-            <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+            <span className={`${className} group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent`} />
+            <span className={`${className} group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent`} />
         </>
     );
 };

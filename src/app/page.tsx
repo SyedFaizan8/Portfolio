@@ -14,6 +14,16 @@ export default function Home(): JSX.Element {
         const locomotiveScroll = new LocomotiveScroll();
       }
     )()
+
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
   }, [])
 
 

@@ -16,12 +16,12 @@ export default function WavyBgFooter() {
     return (
         <>
             <WavyBackground id="contact" className="w-full grid grid-cols-3" >
-                <div className="col-span-1 col-start-2 px-14 mb-2">
+                <div className="col-span-3 px-32 mb-2">
                     <div className="space-y-2">
-                        <p className="text-2xl text-center sm:text-4xl font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+                        <p className="text-3xl text-center font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                             Contact Me
                         </p>
-                        <p className="text-2xl text-center sm:text-xl font-bold relative bg-clip-text text-transparent pb-2 bg-gradient-to-b from-neutral-200 to-neutral-500">
+                        <p className="text-sm text-center font-bold relative bg-clip-text text-transparent pb-2 bg-gradient-to-b from-neutral-200 to-neutral-500">
                             Feel free to reach out.
                         </p>
                     </div>
@@ -74,7 +74,7 @@ export default function WavyBgFooter() {
                     </div>
                 </div>
             </WavyBackground>
-            <p className="text-2xl sm:text-sm font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+            <p className="text-xs font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                 ©2024 Syed Faizan - All Rights Reserved
             </p>
         </>

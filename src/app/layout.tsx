@@ -22,7 +22,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" >
       <body className={`${inter.className}  ${play.variable}`}>
-        <nav className='relative w-full flex justify-center'>
+        <nav>
           <Navbar />
         </nav>
         {children}
