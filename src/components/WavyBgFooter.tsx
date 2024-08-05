@@ -16,33 +16,33 @@ export default function WavyBgFooter() {
     return (
         <>
             <WavyBackground id="contact" className="w-full flex flex-row justify-center items-center" >
-                <div className=" mb-2">
+                <div className=" mb-2 lg:mb-10">
                     <div className="space-y-2">
-                        <p className="text-3xl text-center font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+                        <p className="text-3xl lg:text-6xl text-center font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                             Contact Me
                         </p>
-                        <p className="text-sm text-center font-bold relative bg-clip-text text-transparent pb-2 bg-gradient-to-b from-neutral-200 to-neutral-500">
+                        <p className="text-sm lg:text-xl text-center font-bold relative bg-clip-text text-transparent pb-2 bg-gradient-to-b from-neutral-200 to-neutral-500">
                             Feel free to reach out.
                         </p>
                     </div>
-                    <div className="space-y-2 ">
+                    <div className="space-y-2  ">
                         <a
                             href="https://www.github.com/SyedFaizan8"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
                             <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm">GitHub</span>
+                            <span className="text-neutral-300 text-sm lg:text-lg">GitHub</span>
                             <BottomGradient />
                         </a>
                         <a
                             href={gmailLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]">
+                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]">
                             <IconBrandGmail className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm">
+                            <span className="text-neutral-300 text-sm lg:text-lg">
                                 GMail
                             </span>
                             <BottomGradient />
@@ -51,10 +51,10 @@ export default function WavyBgFooter() {
                             href="https://www.linkedin.com/in/syedfaizan-edu"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
                             <IconBrandLinkedin className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm">
+                            <span className="text-neutral-300 text-sm lg:text-lg">
                                 LinkedIn
                             </span>
                             <BottomGradient />
@@ -63,10 +63,10 @@ export default function WavyBgFooter() {
                             href="https://www.github.com/SyedFaizan8"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
                             <IconBrandInstagram className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm">
+                            <span className="text-neutral-300 text-sm lg:text-lg">
                                 Instagram
                             </span>
                             <BottomGradient />

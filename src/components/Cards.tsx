@@ -8,19 +8,19 @@ import { IconBrandGithub } from "@tabler/icons-react";
 export default function Cards({ id }: { id: string }) {
     return (
         <div id={id} className="w-full py-16 h-auto from-neutral-200 to-neutral-500">
-            <div className="text-start w-full text-5xl pb-8 px-10 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+            <div className="text-start lg:text-center lg:text-8xl w-full text-5xl pb-8 lg:pb-10 px-10 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                 Projects
             </div>
-            <div className="grid px-10 grid-cols-1 gap-10 w-full">
+            <div className="grid px-10 lg:px-16 grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-5 w-full">
                 <WobbleCard
-                    containerClassName="col-span-1 relative bg-black h-[300px] "
+                    containerClassName="col-span-1 inline-block lg:col-span-2 relative bg-black h-[300px] "
                 >
                     <div className="grid grid-cols-2">
-                        <h2 className="col-span-2 text-left text-lg font-semibold tracking-[-0.015em]">
+                        <h2 className="col-span-2 lg:col-start-1 lg:col-span-1 text-left lg:text-3xl text-lg font-semibold tracking-[-0.015em]">
                             Simplified version of classic Pacman game.
                         </h2>
-                        <div className="col-span-1">
-                            <p className="mt-4 text-left text-sm text-neutral-200">
+                        <div className="col-span-1 lg:col-start-1 lg:col-span-1">
+                            <p className="mt-4  lg:text-xl text-left text-sm text-neutral-200">
                                 Technologies used: C, OpenGL Utility Toolkit (GLUT) Library.
                             </p>
                             <a
@@ -30,8 +30,8 @@ export default function Cards({ id }: { id: string }) {
                                 className=" relative group/btn flex  items-center justify-start px-2 space-x-1 w-28 mt-10 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                             >
                                 <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                                <span className="text-white text-sm">Github <span className="hidden">| Find the code here</span> </span>
-                                <BottomGradient className="hidden" />
+                                <span className="text-white text-sm">Github <span className="hidden lg:inline-block">| Find the code here</span> </span>
+                                <BottomGradient className="hidden lg:inline-block" />
                             </a>
                         </div>
                         <Image
@@ -39,7 +39,7 @@ export default function Cards({ id }: { id: string }) {
                             width={300}
                             height={300}
                             alt=""
-                            className="col-span-1 w-full h-full pt-5  contrast-100 brightness-100 rounded-lg"
+                            className="col-span-1 h-full lg:-right-2 pt-5 lg:absolute lg:-bottom-5 contrast-100 brightness-100 rounded-lg"
                         />
                     </div>
                 </WobbleCard>
@@ -57,12 +57,12 @@ export default function Cards({ id }: { id: string }) {
                         className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-10 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                     >
                         <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                        <span className="text-white text-sm">Github <span className="hidden">| Find the code here</span> </span>
-                        <BottomGradient className="hidden" />
+                        <span className="text-white text-sm">Github <span className="hidden lg:inline-block">| Find the code here</span> </span>
+                        <BottomGradient className="hidden lg:inline-block" />
                     </a>
 
                 </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 relative bg-black h-[550px]">
+                <WobbleCard containerClassName="col-span-3 relative bg-black h-[550px]">
                     <div className="">
                         <h2 className="text-left text-lg font-semibold tracking-[-0.015em]">
                             A web application to track the full supply chain from farmer to consumer using Ethereum blockchain.
@@ -76,11 +76,11 @@ export default function Cards({ id }: { id: string }) {
                             href="https://github.com/SyedFaizan8/Blockchain-Based_SupplyChainManagement_for_AgriculturalProducts"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-4 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-10  text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
                             <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                            <span className="text-white text-sm">Github <span className="hidden">| Find the code here</span> </span>
-                            <BottomGradient className="hidden" />
+                            <span className="text-white text-sm">Github <span className="hidden lg:inline-block">| Find the code here</span> </span>
+                            <BottomGradient className="hidden lg:inline-block" />
                         </a>
                     </div>
                     <Image

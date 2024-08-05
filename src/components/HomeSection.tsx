@@ -44,7 +44,7 @@ export default function HeroSection({ id }: { id: string }) {
                     }}
                     className="w-full relative "
                 >
-                    <div className=" mt-36 lg:mt-52 w-full">
+                    <div className=" mt-36 lg:mt-60 w-full">
                         <div className="w-full px-10">
                             <div className="font-play w-full ">
                                 <TypewriterEffectSmooth cursorClassName="lg:h-14 md:h-14 h-7" words={words} />

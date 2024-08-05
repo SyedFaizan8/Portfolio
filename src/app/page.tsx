@@ -1,8 +1,8 @@
 "use client"
 
-import Cards from "@/components/Cards";
 import HeroSection from "@/components/HomeSection";
 import { Profile } from "@/components/Profile";
+import Project from "@/components/Project";
 import { useEffect } from 'react';
 
 export default function Home(): JSX.Element {
@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
   return (
     <>
       <HeroSection id="home" />
-      <Cards id="project" />
+      <Project id="project" />
       <Profile id="about" />
     </>
   );
