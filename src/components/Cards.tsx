@@ -8,7 +8,7 @@ import { IconBrandGithub } from "@tabler/icons-react";
 export default function Cards({ id }: { id: string }) {
     return (
         <div id={id} className=" w-full  py-16 h-auto from-neutral-200 to-neutral-500">
-            <div className="text-5xl pb-8 px-10 font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-start">
+            <div className="text-start w-full text-5xl pb-8 px-10 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                 Projects
             </div>
             <div className="grid px-10 grid-cols-1 gap-10 w-full">

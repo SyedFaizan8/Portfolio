@@ -11,7 +11,7 @@ export function Profile({ id }: { id: string }) {
                 About Me
             </p>
             <div className="grid grid-cols-3">
-                <Imagecards classname="col-span-3 w-fullt flex pb-10" imageUrl="/sideProfile.jpg" />
+                <Imagecards classname="col-span-3 w-full flex pb-10" imageUrl="/sideProfile.jpg" />
                 <div className="col-span-3 space-y-6 px-14 text-wrap pb-10  text-justify indent-12">
                     <p>Hello! I'm Syed Faizan, a recent Computer Science Engineering graduate and a passionate Software Developer specializing in web and mobile applications, DevOps, and cybersecurity. With a strong foundation in frontend and backend technologies, I create efficient and innovative solutions.</p>
                     <p>During my studies, I completed projects ranging from complex web applications to secure systems. I pride myself on my problem-solving skills, attention to detail, and teamwork.</p>
