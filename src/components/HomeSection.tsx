@@ -15,25 +15,25 @@ export default function HeroSection({ id }: { id: string }) {
     const words = [
         {
             text: "Hi, ",
-            className: " text-3xl w-full md:text-5xl font-bold text-white text-left"
+            className: "text-xl w-full md:text-5xl font-bold text-white text-left"
         },
         {
             text: "I'm ",
-            className: " text-3xl w-full md:text-5xl font-bold text-white text-left"
+            className: "text-xl w-full md:text-5xl font-bold text-white text-left"
         },
         {
             text: "Syed ",
-            className: " text-3xl w-full md:text-5xl font-bold text-white text-left"
+            className: "text-xl w-full md:text-5xl font-bold text-white text-left"
         },
         {
             text: "Faizan.",
-            className: " text-3xl w-full md:text-5xl font-bold text-white text-left"
+            className: "text-xl w-full md:text-5xl font-bold text-white text-left"
         },
     ];
 
     return (
         <div id={id}>
-            <AuroraBackground className="max-h-96">
+            <AuroraBackground className="h-96 lg:h-screen">
                 <motion.div
                     initial={{ opacity: 0.0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -44,22 +44,19 @@ export default function HeroSection({ id }: { id: string }) {
                     }}
                     className="w-full relative "
                 >
-                    {/* className="w-full relative flex flex-col gap-4 items-center justify-center " */}
-                    <div className=" mt-36 w-full">
-                        {/* className=" mt-20 w-full flex flex-row" */}
-                        {/* left */}
+                    <div className=" mt-36 lg:mt-52 w-full">
                         <div className="w-full px-10">
-                            <div className="font-play text-sm w-full font-bold text-neutral-500 text-left">
-                                <TypewriterEffectSmooth words={words} />
+                            <div className="font-play w-full ">
+                                <TypewriterEffectSmooth cursorClassName="lg:h-14 md:h-14 h-7" words={words} />
                             </div>
-                            <div className="font-extralight w-full text-sm  text-neutral-200 ">
-                                I'm a passionate Software Developer specializing in<FlipWords className="hidden" words={skills} /><span className="md:hidden"> Web and Mobile Application </span>development.  Let's create something amazing together!
+                            <div className="font-extralight w-full text-sm lg:text-xl text-neutral-200 ">
+                                I'm a passionate Software Developer specializing in<FlipWords className="hidden lg:inline-block" words={skills} /><span className="lg:hidden"> Web and Mobile Application </span>development. <div className="hidden md:inline-block"> Let's create something amazing together!</div>
                             </div>
                             <ScrollLink
                                 to="contact"
                                 smooth="easeInOutQuad"
                                 duration={1000}>
-                                <button className=" mt-6 text-xs shadow-[0_0_0_3px_#000000_inset] px-1 py-1 bg-transparent border border-white text-white rounded-xl font-bold transform md:hover:-translate-y-1 transition duration-400">
+                                <button className="lg:rounded-3xl lg:mt-8  lg:text-lg lg:px-2 mt-6 text-xs shadow-[0_0_0_3px_#000000_inset] px-1 py-1 bg-transparent border border-white text-white rounded-xl font-bold transform lg:hover:-translate-y-1 transition duration-400">
                                     Contact Me
                                 </button>
                             </ScrollLink>
