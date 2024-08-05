@@ -36,10 +36,10 @@ export default function Cards({ id }: { id: string }) {
                         </div>
                         <Image
                             src="/pacman.png"
-                            width={400}
-                            height={400}
+                            width={300}
+                            height={300}
                             alt=""
-                            className="col-span-1 absolute h-56 w-56 -right-1 contrast-100 brightness-100 -bottom-10 rounded-lg"
+                            className="col-span-1 w-full h-full pt-5  contrast-100 brightness-100 rounded-lg"
                         />
                     </div>
                 </WobbleCard>
@@ -51,7 +51,7 @@ export default function Cards({ id }: { id: string }) {
                         Analyzes the messages of group chats and individual chats, showing counts.
                     </p>
                     <a
-                        href="https://www.github.com/SyedFaizan8"
+                        href="https://github.com/SyedFaizan8/Whatsapp_Analyzer"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-10 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
@@ -73,7 +73,7 @@ export default function Cards({ id }: { id: string }) {
 
                         </p>
                         <a
-                            href="https://www.github.com/SyedFaizan8"
+                            href="https://github.com/SyedFaizan8/Blockchain-Based_SupplyChainManagement_for_AgriculturalProducts"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-4 text-white rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
