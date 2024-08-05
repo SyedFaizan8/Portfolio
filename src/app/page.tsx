@@ -8,12 +8,6 @@ import { useEffect } from 'react';
 export default function Home(): JSX.Element {
 
   useEffect(() => {
-    // (
-    //   async () => {
-    //     const LocomotiveScroll = (await import('locomotive-scroll')).default;
-    //     const locomotiveScroll = new LocomotiveScroll();
-    //   }
-    // )()
 
     const handleContextMenu = (e: MouseEvent) => {
       e.preventDefault();
