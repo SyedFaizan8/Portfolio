@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
   useEffect(() => {
 
     //scroll
-    const lenis = new Lenis({ smoothWheel: true })
+    const lenis = new Lenis()
 
     function raf(time: any) {
       lenis.raf(time)
