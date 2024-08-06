@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'Syed Faizan - Professional Portfolio | Software Engineer',
+        name: 'Syed Faizan | Software Engineer',
         short_name: 'Syed Faizan',
         description: 'Explore Faizan\'s portfolio showcasing projects and skills in software development. Discover a fresh perspective and connect for exciting opportunities.',
         start_url: '/',
