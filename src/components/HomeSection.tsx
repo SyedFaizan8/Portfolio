@@ -50,7 +50,7 @@ export default function HeroSection({ id }: { id: string }) {
                                 <TypewriterEffectSmooth cursorClassName="lg:h-14 md:h-14 h-7" words={words} />
                             </div>
                             <div className="font-extralight w-full text-sm lg:text-xl text-neutral-200 ">
-                                Im a passionate Software Developer specializing in<FlipWords className="hidden lg:inline-block" words={skills} /><span className="lg:hidden"> Web and Mobile Application </span>development. <div className="hidden md:inline-block"> Lets create something amazing together!</div>
+                                I am a passionate Software Developer specializing in<FlipWords className="hidden lg:inline-block" words={skills} /><span className="lg:hidden"> Web and Mobile Application </span>development. <div className="hidden md:inline-block"> Lets create something amazing together!</div>
                             </div>
                             <ScrollLink
                                 to="contact"
@@ -61,7 +61,6 @@ export default function HeroSection({ id }: { id: string }) {
                                 </button>
                             </ScrollLink>
                         </div>
-                        {/* right */}
                         <div className="w-full ">
                         </div>
                     </div>
