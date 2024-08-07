@@ -36,7 +36,7 @@ export default function Project({ id }: { id: string }) {
                         </a>
                     </div>
                     <Image
-                        src="/pacman.png"
+                        src="/pacman.webp"
                         width={500}
                         height={500}
                         alt="linear demo image"
@@ -82,7 +82,7 @@ export default function Project({ id }: { id: string }) {
                         </a>
                     </div>
                     <Image
-                        src="/agroChain.png"
+                        src="/agroChain.webp"
                         width={500}
                         height={500}
                         alt="linear demo image"
