@@ -74,7 +74,7 @@ export default function WavyBgFooter() {
                     </div>
                 </div>
             </WavyBackground>
-            <p className="text-xs font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+            <p className="text-xs text-center font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                 ©2024 Syed Faizan - All Rights Reserved
             </p>
         </>

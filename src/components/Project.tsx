@@ -48,7 +48,7 @@ export default function Project({ id }: { id: string }) {
                         WhatsApp Analyzer
                     </h2>
                     <p className="mt-4 max-w-[26rem] text-left text-xs lg:text-base/6 ">
-                        Analyzes the messages of group chats and individual chats, showing counts.
+                        Analyzes the messages of group chats, individual chats and showing counts.
                     </p>
                     <a
                         href="https://github.com/SyedFaizan8/Whatsapp_Analyzer"

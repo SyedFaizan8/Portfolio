@@ -2,7 +2,7 @@
 
 import HeroSection from "@/components/HomeSection";
 import { Profile } from "@/components/Profile";
-import Project from "@/components/Project";
+// import Project from "@/components/Project";
 import { useEffect } from 'react';
 import Lenis from 'lenis'
 import Navbar from "@/components/Navbar";
@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
     <>
       <Navbar />
       <HeroSection id="home" />
-      <Project id="project" />
+      {/* <Project id="project" /> */}
       <Profile id="about" />
       <WavyBgFooter />
     </>

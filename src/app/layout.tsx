@@ -8,6 +8,7 @@ const play = Playfair_Display({ subsets: ['latin'], variable: "--font_play" });
 export const metadata: Metadata = {
   title: 'Syed Faizan',
   description: 'Explore Faizan\'s portfolio showcasing projects and skills in software development. Discover a fresh perspective and connect for exciting opportunities.',
+  keywords: ["Syed", "Faizan", "Syed Faizan portfolio", "software engineer portfolio", "professional portfolio", "Software Developer", "Web Developer", "Mobile Developer", "DevOps Engineer", "Cybersecurity Specialist", "Full-stack developer", "Portfolio", "Computer Science Engineering", "Project Showcase", "Football", "Next.js Portfolio", "Developer Portfolio"],
 };
 
 interface RootLayoutProps {
