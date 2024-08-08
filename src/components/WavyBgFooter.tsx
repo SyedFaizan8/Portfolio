@@ -3,6 +3,7 @@
 import React from "react";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import {
+    IconBrandDiscord,
     IconBrandGithub,
     IconBrandGmail,
     IconBrandInstagram,
@@ -68,6 +69,18 @@ export default function WavyBgFooter() {
                             <IconBrandInstagram className="h-4 w-4 text-neutral-300" />
                             <span className="text-neutral-300 text-sm lg:text-lg">
                                 Instagram
+                            </span>
+                            <BottomGradient />
+                        </a>
+                        <a
+                            href="https://discordapp.com/users/1051833937120477224"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        >
+                            <IconBrandDiscord className="h-4 w-4 text-neutral-300" />
+                            <span className="text-neutral-300 text-sm lg:text-lg">
+                                Discord
                             </span>
                             <BottomGradient />
                         </a>

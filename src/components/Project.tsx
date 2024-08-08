@@ -8,8 +8,7 @@ import { IconBrandGithub } from "@tabler/icons-react";
 export default function Project({ id }: { id: string }) {
     return (
         <>
-            {/* relative z-20 w-full px-10 pb-8 text-5xl font-bold text-start text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 lg:pb-10 lg:text-7xl lg:text-center */}
-            <div id={id} className="relative z-20 w-full px-10 pb-8 text-5xl font-bold text-start bg-gradient-to-b from-neutral-200 to-neutral-500 lg:pb-10 lg:text-7xl lg:text-center">
+            <div id={id} className="relative z-20 w-full px-10 pb-8 text-5xl font-bold text-start text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 lg:pb-10 lg:text-7xl lg:text-center">
                 Projects
             </div>
             <div className="grid lg:px-20 grid-cols-1 lg:grid-cols-3 px-10 gap-4 max-w-7xl mx-auto w-full from-neutral-200 to-neutral-500">
