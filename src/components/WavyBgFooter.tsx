@@ -16,8 +16,8 @@ export default function WavyBgFooter() {
 
     return (
         <>
-            <WavyBackground id="contact" className="w-full flex flex-row justify-center items-center" >
-                <div className=" mb-2 lg:mb-10">
+            <WavyBackground id="contact" className="w-full flex flex-col justify-center items-center" >
+                <div className=" mb-2 ">
                     <div className="space-y-2">
                         <p className="text-3xl lg:text-6xl text-center font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                             Contact Me
@@ -26,7 +26,7 @@ export default function WavyBgFooter() {
                             Feel free to reach out.
                         </p>
                     </div>
-                    <div className="space-y-2  ">
+                    <div className="space-y-2">
                         <a
                             href="https://www.github.com/SyedFaizan8"
                             target="_blank"
@@ -86,10 +86,10 @@ export default function WavyBgFooter() {
                         </a>
                     </div>
                 </div>
+                <div className="pt-4 text-xs text-center font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+                    ©2024 Syed Faizan - All Rights Reserved
+                </div>
             </WavyBackground>
-            <p className="text-xs text-center font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
-                ©2024 Syed Faizan - All Rights Reserved
-            </p>
         </>
     );
 }
