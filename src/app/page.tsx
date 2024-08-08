@@ -1,12 +1,12 @@
 "use client"
 
-import HeroSection from "@/components/HomeSection";
 import { Profile } from "@/components/Profile";
 import Project from "@/components/Project";
 import { useEffect } from 'react';
 import Lenis from 'lenis'
 import Navbar from "@/components/Navbar";
-import WavyBgFooter from "@/components/WavyBgFooter";
+import Footer from "@/components/Footer/Footer";
+import HomeSection from "@/components/HomeSection";
 
 export default function Home(): JSX.Element {
 
@@ -32,10 +32,10 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Navbar />
-      <HeroSection id="home" />
+      <HomeSection />
       <Project id="project" />
       <Profile id="about" />
-      <WavyBgFooter />
+      <Footer />
     </>
   );
 }
