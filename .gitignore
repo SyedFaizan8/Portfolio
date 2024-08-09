@@ -3,10 +3,12 @@
 # testing report unlighthouse
 /.unlighthouse/
 
+# icons
+/.favicon/
+
 # dependencies
 /node_modules
 /.pnp
-/favicon
 .pnp.js
 .yarn/install-state.gz
 
