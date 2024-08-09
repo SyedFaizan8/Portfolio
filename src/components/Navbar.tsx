@@ -25,7 +25,7 @@ const Navbar = () => {
           to="about"
           smooth="easeInOutQuad"
           duration={500}
-          offset={-50}
+          offset={-10}
         >
           <button>About Me</button>
         </Link>

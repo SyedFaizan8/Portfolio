@@ -28,7 +28,7 @@ export default function Footer() {
                         href="https://www.github.com/SyedFaizan8"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className=" relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black border border-zinc-800"
                     >
                         <IconBrandGithub className="h-4 w-4 " />
                         <span className=" text-sm lg:text-lg">GitHub</span>
@@ -38,7 +38,7 @@ export default function Footer() {
                         href={gmailLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]">
+                        className=" relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black border border-zinc-800">
                         <IconBrandGmail className="h-4 w-4 " />
                         <span className=" text-sm lg:text-lg">
                             GMail
@@ -49,7 +49,7 @@ export default function Footer() {
                         href="https://www.linkedin.com/in/syedfaizan-edu"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className=" relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black border border-zinc-800"
                     >
                         <IconBrandLinkedin className="h-4 w-4 " />
                         <span className=" text-sm lg:text-lg">
@@ -61,7 +61,7 @@ export default function Footer() {
                         href="https://www.instagram.com/syedfaizan.8?igsh=MW5rNmVtcDhjMjBydA=="
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className=" relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black border border-zinc-800"
                     >
                         <IconBrandInstagram className="h-4 w-4 " />
                         <span className=" text-sm lg:text-lg">
@@ -73,7 +73,7 @@ export default function Footer() {
                         href="https://discordapp.com/users/1051833937120477224"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className=" relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black border border-zinc-800"
                     >
                         <IconBrandDiscord className="h-4 w-4 " />
                         <span className=" text-sm lg:text-lg">
