@@ -40,7 +40,7 @@ export default function HomeSection() {
             <div className="z-10 mt-16 lg:mt-36 w-full">
                 <div className="w-full px-10">
                     <div className=" font-play w-full ">
-                        <div className="lg:hidden text-3xl w-full py-6  font-bold text-white text-left "> Hi I am <br />Syed Faizan👋</div>
+                        <div className="lg:hidden text-3xl w-full py-6  font-bold text-white text-left "> Hi I am <br />Syed Faizan<span className="text-2xl">👋</span></div>
                         <div className="hidden lg:inline-block">
                             <TypewriterEffectSmooth cursorClassName="lg:h-20 md:h-20 h-7" words={words} />
                         </div>

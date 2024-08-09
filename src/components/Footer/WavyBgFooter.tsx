@@ -27,15 +27,15 @@ export default function WavyBgFooter() {
                             Feel free to reach out.
                         </p>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 text-white">
                         <a
                             href="https://www.github.com/SyedFaizan8"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
-                            <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm lg:text-lg">GitHub</span>
+                            <IconBrandGithub className="h-4 w-4 " />
+                            <span className=" text-sm lg:text-lg">GitHub</span>
                             <BottomGradient />
                         </a>
                         <a
@@ -43,8 +43,8 @@ export default function WavyBgFooter() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]">
-                            <IconBrandGmail className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm lg:text-lg">
+                            <IconBrandGmail className="h-4 w-4 " />
+                            <span className=" text-sm lg:text-lg">
                                 GMail
                             </span>
                             <BottomGradient />
@@ -55,8 +55,8 @@ export default function WavyBgFooter() {
                             rel="noopener noreferrer"
                             className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
-                            <IconBrandLinkedin className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm lg:text-lg">
+                            <IconBrandLinkedin className="h-4 w-4 " />
+                            <span className=" text-sm lg:text-lg">
                                 LinkedIn
                             </span>
                             <BottomGradient />
@@ -67,8 +67,8 @@ export default function WavyBgFooter() {
                             rel="noopener noreferrer"
                             className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
-                            <IconBrandInstagram className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm lg:text-lg">
+                            <IconBrandInstagram className="h-4 w-4 " />
+                            <span className=" text-sm lg:text-lg">
                                 Instagram
                             </span>
                             <BottomGradient />
@@ -79,8 +79,8 @@ export default function WavyBgFooter() {
                             rel="noopener noreferrer"
                             className="drop-shadow-lg bg-opacity-30 backdrop-blur-lg relative group/btn flex space-x-2 items-center justify-start px-4  w-full text-white rounded-md h-8 lg:h-10 font-medium bg-black shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
-                            <IconBrandDiscord className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-300 text-sm lg:text-lg">
+                            <IconBrandDiscord className="h-4 w-4 " />
+                            <span className=" text-sm lg:text-lg">
                                 Discord
                             </span>
                             <BottomGradient />
