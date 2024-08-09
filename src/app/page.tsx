@@ -7,7 +7,6 @@ import Lenis from 'lenis'
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
-import Testing from "@/components/Testing";
 
 export default function Home(): JSX.Element {
 
@@ -36,8 +35,7 @@ export default function Home(): JSX.Element {
       <HomeSection />
       <Project />
       <Profile />
-      {/* <Footer /> */}
-      <Testing />
+      <Footer />
     </>
   );
 }
