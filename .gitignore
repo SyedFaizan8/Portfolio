@@ -1,13 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-
-# manifest file
-/src/app/android-chrome-192x192.png
-/src/app/android-chrome-512x512.png
-/src/app/apple-touch-icon.png
-/src/app/favicon-16x16.png
-/src/app/favicon-32x32.png
-/src/app/manifest.ts
+# testing report unlighthouse
+/.unlighthouse/
 
 # dependencies
 /node_modules

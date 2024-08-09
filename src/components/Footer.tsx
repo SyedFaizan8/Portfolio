@@ -59,7 +59,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         className="flex flex-col items-center text-xs text-white hover:text-gray-200  transition-colors duration-200"
                     >
-                        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 hover:bg-blue-900  transition-colors duration-200">
+                        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 lg:hover:bg-blue-900  transition-colors duration-200">
                             {icon}
                         </div>
                         <span className="mt-2">{label}</span>
