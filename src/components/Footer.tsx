@@ -7,12 +7,11 @@ import {
     IconBrandInstagram,
     IconBrandLinkedin,
 } from "@tabler/icons-react";
-import BottomGradient from "./BottomGradient";
 
-export default function StarBgFooter() {
+export default function Footer() {
     const gmailLink: string = "https://mail.google.com/mail/?view=cm&su=This%20came%20from%20Portfolio&to=Syedbusiness21@gmail.com";
     return (
-        <div id="contact" className="w-full bg-black bg-dot-white/[0.3]  relative flex flex-col items-center justify-center ">
+        <div id="contact" className="w-full bg-black bg-dot-white/[0.3] md:bg-dot-white/[0.2]  relative flex flex-col items-center justify-center ">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex  items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             <div className="z-50 mb-2 ">
@@ -91,3 +90,13 @@ export default function StarBgFooter() {
         </div>
     );
 }
+
+
+function BottomGradient() {
+    return (
+        <>
+            <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+            <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+        </>
+    );
+};

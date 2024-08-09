@@ -5,10 +5,10 @@ import React from "react";
 import { WobbleCard } from "@/components/ui/wobble-card";
 import { IconBrandGithub } from "@tabler/icons-react";
 
-export default function Project({ id }: { id: string }) {
+export default function Project() {
     return (
         <>
-            <div id={id} className="relative z-20 w-full px-10 pb-8 text-5xl font-bold text-start text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 lg:pb-10 lg:text-7xl lg:text-center">
+            <div id="project" className="relative z-20 w-full px-10 pb-8 text-5xl font-bold text-start text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 lg:pb-10 lg:text-7xl lg:text-center">
                 Projects
             </div>
             <div className="grid lg:px-20 grid-cols-1 lg:grid-cols-3 px-10 gap-4 max-w-7xl mx-auto w-full from-neutral-200 to-neutral-500">
@@ -43,7 +43,7 @@ export default function Project({ id }: { id: string }) {
                         className="absolute -right-4 xl:-right-[10%] lg:-right-[30%] md:w-96  -bottom-10 object-contain rounded-2xl"
                     />
                 </WobbleCard>
-                <WobbleCard containerClassName="bg-black col-span-1 min-h-[300px] ">
+                <WobbleCard containerClassName="bg-black col-span-1 min-h-[300px]  ">
                     <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em]">
                         WhatsApp Analyzer
                     </h2>
@@ -61,7 +61,7 @@ export default function Project({ id }: { id: string }) {
                         <BottomGradient className="hidden lg:inline-block" />
                     </a>
                 </WobbleCard>
-                <WobbleCard containerClassName="bg-black col-span-1 lg:col-span-3 h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+                <WobbleCard containerClassName="bg-black col-span-1 lg:col-span-3 h-[500px] lg:h-[400px] xl:min-h-[300px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] ">
                             A web application to track the full supply chain from farmer to consumer using Ethereum blockchain.

@@ -5,7 +5,7 @@ import Project from "@/components/Project";
 import { useEffect } from 'react';
 import Lenis from 'lenis'
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
 
 export default function Home(): JSX.Element {
@@ -33,8 +33,8 @@ export default function Home(): JSX.Element {
     <>
       <Navbar />
       <HomeSection />
-      <Project id="project" />
-      <Profile id="about" />
+      <Project />
+      <Profile />
       <Footer />
     </>
   );
