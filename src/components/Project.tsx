@@ -17,7 +17,7 @@ export default function Project() {
                     className=""
                 >
                     {/* sm: '480px', md: '768px', lg: '976px', xl: '1440px', */}
-                    <div className="max-w-xs">
+                    <div className="max-w-xs z-50">
                         <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] ">
                             Simplified version of classic Pacman game.
                         </h2>
@@ -40,7 +40,7 @@ export default function Project() {
                         width={500}
                         height={500}
                         alt="linear demo image"
-                        className="absolute -right-4 xl:-right-[10%] lg:-right-[30%] md:w-96  -bottom-10 object-contain rounded-2xl"
+                        className="z-20 absolute -right-4 xl:-right-[10%] lg:-right-[30%] md:w-96  -bottom-10 object-contain rounded-2xl"
                     />
                 </WobbleCard>
                 <WobbleCard containerClassName="bg-black col-span-1 min-h-[300px]  ">
