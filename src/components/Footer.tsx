@@ -24,7 +24,7 @@ export default function Footer() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            <div className="grid grid-cols-3 gap-4  md:grid-cols-5">
                 {[
                     {
                         href: gmailLink,
