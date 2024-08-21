@@ -15,8 +15,8 @@ export default function Footer() {
     return (
         <footer id="contact" className="w-full bg-black pt-8 pb-2 flex flex-col items-center">
 
-            <div className="mb-6 text-center ">
-                <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 mb-2">
+            <div className=" mb-6 text-center ">
+                <p className="font-play text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 mb-2">
                     Contact Me
                 </p>
                 <p className="text-md text-gray-400">
