@@ -13,7 +13,7 @@ export function Profile() {
             <div className="z-20 lg:z-0 md:z-0 grid grid-cols-3 lg:px-20 md:px-5 xl:px-44">
                 <Imagecards classname="col-span-3 lg:col-span-1 md:col-span-1 w-full pb-10" imageUrl="/sideProfile.webp" />
                 <div className="text-white col-span-3 lg:col-span-2 md:col-span-2 space-y-6 px-5 lg:px-4 md:px-4  text-wrap pb-10 text-justify indent-12 hyphens-auto md:hyphens-none">
-                    <p>Hi! I'm Syed Faizan, a Computer Science graduate and Software Developer specializing in web and mobile apps, DevOps, and cybersecurity. With a strong foundation in frontend and backend development, I build efficient, innovative solutions. I'm an eager learner, staying updated with industry trends, and enjoy football and gaming, which sharpen my strategic thinking.</p>
+                    <p>Hi! I am Syed Faizan, a Computer Science graduate and Software Developer specializing in web and mobile apps, DevOps, and cybersecurity. With a strong foundation in frontend and backend development, I build efficient, innovative solutions. I am an eager learner, staying updated with industry trends, and enjoy football and gaming, which sharpen my strategic thinking.</p>
                 </div>
             </div>
         </div >
