@@ -16,7 +16,7 @@ export default function HomeSection() {
                 className=" -top-20 left-0 md:left-60 md:-top-20"
                 fill="white"
             />
-            <div className="z-10 mt-16 lg:mt-36 w-full">
+            <div className="z-10 mt-16 md:mt-40 w-full">
                 <div className="w-full px-4">
                     <div className="w-full ">
                         <div className="lg:hidden text-4xl md:text-5xl  w-full py-6  font-bold text-white text-left "> Hi I am <br />Syed Faizan<span className="text-2xl">👋</span></div>
