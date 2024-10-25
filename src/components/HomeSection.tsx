@@ -17,9 +17,9 @@ export default function HomeSection() {
                 fill="white"
             />
             <div className="z-10 mt-16 lg:mt-36 w-full">
-                <div className="w-full px-10">
+                <div className="w-full px-4">
                     <div className="w-full ">
-                        <div className="lg:hidden text-3xl w-full py-6  font-bold text-white text-left "> Hi I am <br />Syed Faizan<span className="text-2xl">👋</span></div>
+                        <div className="lg:hidden text-4xl md:text-5xl  w-full py-6  font-bold text-white text-left "> Hi I am <br />Syed Faizan<span className="text-2xl">👋</span></div>
                         <div className="hidden lg:inline-block text-xl py-6 w-full md:text-7xl font-bold text-white text-left">  Hi I am Syed Faizan👋</div>
                     </div>
                     <div className="font-extralight w-full text-sm lg:text-3xl  text-neutral-200 ">

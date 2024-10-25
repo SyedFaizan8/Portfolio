@@ -37,7 +37,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <html lang="en" >
-      <body className={`${inter.className}  ${play.variable}`}>
+      <body className={`${inter.className}  ${play.variable} dark`}>
         {children}
       </body>
     </html>

@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
     const gmailLink: string =
-        "https://mail.google.com/mail/?view=cm&su=This%20came%20from%20Portfolio&to=Syedbusiness21@gmail.com";
+        "https://mail.google.com/mail/?view=cm&su=This%20came%20from%20Portfolio&to=contact@syedfaizan.in";
 
     return (
         <footer id="contact" className="w-full bg-black pt-8 pb-2 flex flex-col items-center">
