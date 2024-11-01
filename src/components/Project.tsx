@@ -3,12 +3,12 @@
 import Image from "next/image";
 import React from "react";
 import { WobbleCard } from "@/components/ui/wobble-card";
-import { IconBrandGithub } from "@tabler/icons-react";
+import { IconBrandGithub, IconRobot, } from "@tabler/icons-react";
 
 export default function Project() {
     return (
         <>
-            <div id="project" className=" font-play relative z-20 w-full px-5 pb-8 text-5xl font-bold text-start text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 lg:pb-10 lg:text-7xl lg:text-center">
+            <div id="project" className=" font-play relative z-20 w-full px-5 pb-8 text-5xl font-bold text-start text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 md:pb-12 md:text-7xl md:text-center">
                 Projects
             </div>
             <div className="grid lg:px-20 grid-cols-1 lg:grid-cols-3 px-5 gap-4 max-w-7xl mx-auto w-full from-neutral-200 to-neutral-500">
@@ -28,10 +28,10 @@ export default function Project() {
                             href="https://www.github.com/SyedFaizan8"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className=" relative group/btn flex  items-center justify-start px-2 space-x-1 w-28 mt-10 text-white lg:w-56 rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            className=" relative group/btn flex  items-center justify-start px-2 space-x-1 mt-10 text-white w-56 rounded-md h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
                             <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                            <span className="text-white text-sm">Github <span className="hidden lg:inline-block">| Find the code here</span> </span>
+                            <span className="text-white text-sm">Github | Find the code here </span>
                             <BottomGradient className="hidden lg:inline-block" />
                         </a>
                     </div>
@@ -45,19 +45,19 @@ export default function Project() {
                 </WobbleCard>
                 <WobbleCard containerClassName="bg-black col-span-1 min-h-[300px]  ">
                     <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em]">
-                        WhatsApp Analyzer
+                        Robo Animation
                     </h2>
                     <p className="mt-4 max-w-[26rem] text-left text-xs lg:text-base/6 ">
-                        Analyzes the messages of group chats, individual chats and showing counts.
+                        Robo Animation powered by Spline Library, View on PC for better Experience
                     </p>
                     <a
-                        href="https://github.com/SyedFaizan8/Whatsapp_Analyzer"
+                        href="https://robo.syedfaizan.in"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-10 text-white rounded-md h-8 lg:w-56 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className="relative group/btn flex items-center justify-start px-2 space-x-1 mt-10 text-white rounded-md h-8 w-28 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                     >
-                        <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                        <span className="text-white text-sm">Github <span className="hidden lg:inline-block">| Find the code here</span> </span>
+                        <IconRobot className="h-4 w-4 text-neutral-300" />
+                        <span className="text-white text-sm">Live page</span>
                         <BottomGradient className="hidden lg:inline-block" />
                     </a>
                 </WobbleCard>
@@ -74,10 +74,10 @@ export default function Project() {
                             href="https://github.com/SyedFaizan8/Blockchain-Based_SupplyChainManagement_for_AgriculturalProducts"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="relative group/btn flex items-center justify-start px-2 space-x-1 w-28 mt-4 text-white rounded-md lg:w-56 h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                            className="relative group/btn flex items-center justify-start px-2 space-x-1  mt-4 text-white rounded-md w-56 h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                         >
                             <IconBrandGithub className="h-4 w-4 text-neutral-300" />
-                            <span className="text-white text-sm">Github <span className="hidden lg:inline-block">| Find the code here</span> </span>
+                            <span className="text-white text-sm">Github | Find the code here</span>
                             <BottomGradient className="hidden lg:inline-block" />
                         </a>
                     </div>

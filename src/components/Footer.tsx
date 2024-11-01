@@ -6,6 +6,10 @@ import {
     IconBrandGmail,
     IconBrandInstagram,
     IconBrandLinkedin,
+    IconBrandTwitter,
+    IconBrandTwitterFilled,
+    IconBrandX,
+    IconBrandXFilled,
 } from "@tabler/icons-react";
 
 export default function Footer() {
@@ -24,7 +28,7 @@ export default function Footer() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4  md:grid-cols-5">
+            <div className="grid grid-cols-3 gap-4  md:grid-cols-6">
                 {[
                     {
                         href: gmailLink,
@@ -50,6 +54,11 @@ export default function Footer() {
                         href: "https://discordapp.com/users/1051833937120477224",
                         icon: <IconBrandDiscord className="h-5 w-5" />,
                         label: "Discord",
+                    },
+                    {
+                        href: "https://x.com/syedfaizan_8",
+                        icon: <IconBrandX className="h-5 w-5" />,
+                        label: "Twitter",
                     },
                 ].map(({ href, icon, label }) => (
                     <a
