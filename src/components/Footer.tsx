@@ -5,11 +5,10 @@ import {
     IconBrandGithub,
     IconBrandGmail,
     IconBrandInstagram,
+    IconBrandLeetcode,
     IconBrandLinkedin,
-    IconBrandTwitter,
-    IconBrandTwitterFilled,
     IconBrandX,
-    IconBrandXFilled,
+    IconLetterG,
 } from "@tabler/icons-react";
 
 export default function Footer() {
@@ -28,7 +27,7 @@ export default function Footer() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4  md:grid-cols-6">
+            <div className="grid grid-cols-4 gap-4  md:grid-cols-7">
                 {[
                     {
                         href: gmailLink,
@@ -46,9 +45,9 @@ export default function Footer() {
                         label: "GitHub",
                     },
                     {
-                        href: "https://www.instagram.com/syedfaizan.8?igsh=MW5rNmVtcDhjMjBydA==",
-                        icon: <IconBrandInstagram className="h-5 w-5" />,
-                        label: "Instagram",
+                        href: "https://leetcode.com/u/syedfaizan8",
+                        icon: <IconBrandLeetcode className="h-5 w-5" />,
+                        label: "Leetcode",
                     },
                     {
                         href: "https://discordapp.com/users/1051833937120477224",
@@ -59,6 +58,11 @@ export default function Footer() {
                         href: "https://x.com/syedfaizan_8",
                         icon: <IconBrandX className="h-5 w-5" />,
                         label: "Twitter",
+                    },
+                    {
+                        href: "https://www.instagram.com/syedfaizan.8?igsh=MW5rNmVtcDhjMjBydA==",
+                        icon: <IconBrandInstagram className="h-5 w-5" />,
+                        label: "Instagram",
                     },
                 ].map(({ href, icon, label }) => (
                     <a
