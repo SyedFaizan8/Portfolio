@@ -1,7 +1,16 @@
-import React from "react";
 import Imagecards from "./ui/imagecards";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 export function Profile() {
+    const handleCopy = () => {
+        navigator.clipboard.writeText("contact@syedfaizan.in");
+    };
+    // const word: string = "contact@syedfaizan.in";
 
     return (
         <div id="about" className="w-full mb-2 lg:mb-12 lg:mt-20 md:mb-12 md:mt-20 bg-black bg-dot-white/[0.3]  relative flex flex-col items-center justify-center pt-16">
@@ -19,6 +28,18 @@ export function Profile() {
                         </p>
                         <div className="md:text-lg text-base py-10 text-white space-y-6 px-5 lg:px-6 text-wrap pb-10 text-justify indent-12 hyphens-auto md:hyphens-none">
                             <p>Hi! I am Syed Faizan, a Computer Science graduate and Software Developer specializing in web and mobile apps, DevOps, and cybersecurity. With a strong foundation in frontend and backend development, I build efficient, innovative solutions. I am an eager learner, staying updated with industry trends, and enjoy football and gaming, which sharpen my strategic thinking.</p>
+                            <div onClick={() => handleCopy()}>
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <span className="font-bold cursor-pointer">My Email Address : contact@syedfaizan.in</span>
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>Double click to copy address</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
+                            </div>
                         </div>
                     </div>
                 </div>
