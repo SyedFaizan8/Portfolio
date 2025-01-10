@@ -66,7 +66,6 @@ export default function Footer() {
         }
     };
 
-
     return (
         <footer id="contact" className="w-full pt-8 pb-2 flex flex-col items-center">
             <div className="w-full bg-black  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative">

@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll"
 
 export default function HomeSection() {
 
-    const skills = ["Web", "Mobile"]
+    const skills = ["Web", "Mobile", "Frontend", "Backend", "Devops", "Fullstack"]
 
     return (
         <div id="home" className="font-play h-80 lg:h-screen w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
