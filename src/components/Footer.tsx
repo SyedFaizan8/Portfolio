@@ -31,6 +31,7 @@ type EmailFormData = z.infer<typeof emailFormSchema>;
 export default function Footer() {
 
     const [status, setStatus] = useState<string | null>(null);
+    const [isSending, setIsSending] = useState(false);
 
     const {
         register,
@@ -42,6 +43,7 @@ export default function Footer() {
     });
 
     const sendEmail = async (data: EmailFormData) => {
+        setIsSending(true);
         setStatus('Sending...');
         try {
             const response = await axios.post('/api/send-email', {
@@ -63,6 +65,8 @@ export default function Footer() {
             setTimeout(() => {
                 setStatus(null);
             }, 3000);
+        } finally {
+            setIsSending(false);
         }
     };
 
@@ -117,11 +121,12 @@ export default function Footer() {
                         <button
                             className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                             type="submit"
+                            disabled={isSending}
                         >
                             Send &rarr;
                             <BottomGradient />
                         </button>
-                        {status && <p className="mt-4 text-center">{status}</p>}
+                        {status && <p className="mt-4 text-gray-400 font-bold text-center">{status}</p>}
                         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
                     </form>
                 </div>
