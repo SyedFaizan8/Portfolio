@@ -8,50 +8,110 @@ import {
     IconBrandLinkedin,
     IconBrandX,
 } from "@tabler/icons-react";
-// import SignupFormDemo from "./signup-form-demo";
+
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/lib/utils";
 import { TextBox } from "./ui/textbox";
 
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import axios from "axios";
+
+const emailFormSchema = z.object({
+    fullname: z.string().min(1, 'Full name is required'),
+    email: z.string().email('Invalid email address'),
+    description: z.string().min(1, 'Description is required'),
+});
+
+type EmailFormData = z.infer<typeof emailFormSchema>;
+
 export default function Footer() {
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log("Form submitted");
+    const [status, setStatus] = useState<string | null>(null);
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+        reset,
+    } = useForm<EmailFormData>({
+        resolver: zodResolver(emailFormSchema),
+    });
+
+    const sendEmail = async (data: EmailFormData) => {
+        setStatus('Sending...');
+        try {
+            const response = await axios.post('/api/send-email', {
+                email: data.email,
+                fullname: `Message from ${data.fullname}`,
+                description: data.description,
+            });
+
+            if (response.status === 200) {
+                setStatus('Email sent successfully!');
+                setTimeout(() => {
+                    setStatus(null);
+                }, 3000);
+                reset();
+            }
+        } catch (error: any) {
+            console.error(error);
+            setStatus('Failed to send email');
+            setTimeout(() => {
+                setStatus(null);
+            }, 3000);
+        }
     };
+
 
     return (
         <footer id="contact" className="w-full pt-8 pb-2 flex flex-col items-center">
             <div className="w-full bg-black  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative">
                 {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0  bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-                <p className="mb-6 text-center  relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
+                <div className="mb-6 text-center  relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
                     <p className="font-play  md:text-6xl text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 mb-2">
                         Contact Me
                     </p>
                     <p className=" md:text-2xl text-lg font-bold text-gray-400">
                         Feel free to reach out anytime.
                     </p>
-                </p>
+                </div>
                 <div className="z-20 w-full font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 max-w-md md:max-w-2xl mx-auto rounded-none md:rounded-2xl px-8  shadow-input">
-                    <form className="my-2" onSubmit={handleSubmit}>
+                    <form className="my-2" onSubmit={handleSubmit(sendEmail)}>
                         <div className="gap-4 md:grid md:grid-cols-2">
                             <LabelInputContainer className="mb-4">
                                 <Label htmlFor="fullname">Full name</Label>
-                                <Input id="fullname" placeholder="fullname" type="text" />
+                                <Input
+                                    id="fullname"
+                                    placeholder="Full name"
+                                    type="text"
+                                    {...register('fullname')}
+                                />
+                                {errors.fullname && <p className="text-red-500 text-sm">{errors.fullname.message}</p>}
                             </LabelInputContainer>
                             <LabelInputContainer className="mb-4">
                                 <Label htmlFor="email">Email Address</Label>
-                                <Input id="email" placeholder="example@gmail.com" type="email" />
+                                <Input
+                                    id="email"
+                                    placeholder="example@gmail.com"
+                                    type="email"
+                                    {...register('email')}
+                                />
+                                {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
                             </LabelInputContainer>
                             <LabelInputContainer className="mb-8 md:col-span-2">
                                 <Label htmlFor="description">Description</Label>
                                 <TextBox
                                     id="description"
-                                    placeholder="description"
+                                    placeholder="Description"
+                                    {...register('description')}
                                     className="h-28"
                                 />
+                                {errors.description && (<p className="text-red-500 text-sm">{errors.description.message}</p>)}
                             </LabelInputContainer>
                         </div>
 
@@ -62,13 +122,11 @@ export default function Footer() {
                             Send &rarr;
                             <BottomGradient />
                         </button>
-
+                        {status && <p className="mt-4 text-center">{status}</p>}
                         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
                     </form>
                 </div>
-
             </div>
-            {/* // links */}
             <div className=" grid grid-cols-3 gap-4  md:grid-cols-6">
                 {[
                     {
