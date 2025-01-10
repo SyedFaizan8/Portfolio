@@ -1,3 +1,6 @@
+'use-client'
+
+import { useState } from "react";
 import Imagecards from "./ui/imagecards";
 import {
     Tooltip,
@@ -7,8 +10,13 @@ import {
 } from "@/components/ui/tooltip"
 
 export function Profile() {
+    const [copied, useCopied] = useState(false);
     const handleCopy = () => {
         navigator.clipboard.writeText("contact@syedfaizan.in");
+        useCopied(true);
+        setTimeout(() => {
+            useCopied(false);
+        }, 10000);
     };
 
     return (
@@ -34,7 +42,7 @@ export function Profile() {
                                             <span className="font-bold cursor-pointer text-sm md:text-lg">My Email: <span className="underline">contact@syedfaizan.in</span></span>
                                         </TooltipTrigger>
                                         <TooltipContent>
-                                            <p>Double click to copy address</p>
+                                            {copied ? <p>copied</p> : <p>click to copy address</p>}
                                         </TooltipContent>
                                     </Tooltip>
                                 </TooltipProvider>
