@@ -17,6 +17,7 @@ Welcome to my personal portfolio website! This project showcases my skills and p
 - **ShadcnUI & AceternityUI**: For enhanced animations and interactive UI components.
 - **Lenis Scroll**: For smooth scrolling effects.
 - **Vercel**: For deployment and hosting.
+- **Nodemailer**: Nodemailer use gmail smtp server in this project to send email.
 
 ## Installation
 
