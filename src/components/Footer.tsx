@@ -48,7 +48,7 @@ export default function Footer() {
         try {
             const response = await axios.post('/api/send-email', {
                 email: data.email,
-                fullname: `Message from ${data.fullname}`,
+                fullname: `Mail from ${data.fullname}`,
                 description: data.description,
             });
 
