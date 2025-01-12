@@ -112,7 +112,7 @@ export default function Footer() {
                                     id="description"
                                     placeholder="Description"
                                     {...register('description')}
-                                    className="h-28"
+                                    className="h-28 resize-none"
                                 />
                                 {errors.description && (<p className="text-red-500 text-sm">{errors.description.message}</p>)}
                             </LabelInputContainer>
