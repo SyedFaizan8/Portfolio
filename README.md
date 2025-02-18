@@ -40,3 +40,7 @@ To run this project locally, follow these steps:
 Website will be available at `https://localhost:3000`.
 
 Thats it Thank you
+
+## License
+
+[MIT License](LICENSE)
