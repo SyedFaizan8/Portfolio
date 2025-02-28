@@ -10,8 +10,8 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <div className="lg:mx-auto text-sm lg:text-lg lg:left-0 lg:right-0 lg:top-3 lg:rounded-r-full lg:rounded-l-full lg:w-2/5  xl:w-2/6 from-neutral-200 font-bold drop-shadow-lg bg-opacity-10 backdrop-blur-sm fixed flex justify-center items-center w-full py-3 z-50 bg-black ">
-      <div className="space-x-5">
+    <div className="lg:mx-auto text-xs lg:text-lg lg:left-0 lg:right-0 lg:top-3 lg:rounded-r-full lg:rounded-l-full lg:w-2/5  xl:w-2/6 from-neutral-200 font-bold drop-shadow-lg bg-opacity-10 backdrop-blur-sm fixed flex justify-center items-center w-full py-3 z-50 bg-black ">
+      <div className="md:space-x-5 space-x-4">
         <Link
           to="home"
           smooth="easeInOutQuad"
@@ -46,6 +46,12 @@ const Navbar: React.FC = () => {
         >
           <button>Contact</button>
         </Link>
+        <a
+          href="/resume.pdf"
+          target="_main"
+        >
+          <button>Resume</button>
+        </a>
       </div>
     </div>
   )

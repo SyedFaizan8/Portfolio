@@ -25,11 +25,11 @@ export function Profile() {
                         <p className="md:block hidden font-play text-start md:text-center md:text-6xl w-full text-3xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-200">
                             About Me
                         </p>
-                        <div className="md:text-lg text-base py-10 text-white space-y-2 px-5 lg:px-6 text-wrap pb-10 text-justify indent-12 hyphens-auto md:hyphens-none">
-                            <p>Hi, I’m Syed Faizan, a Computer Science graduate and Software Developer. I am committed to developing efficient, scalable solutions and keeping my skills aligned with the latest industry trends. I take a methodical approach to problem-solving and value quality in every project. In my spare time, I enjoy football and gaming, which enhance my critical thinking and strategy skills.</p>
-                            <div onClick={() => handleCopy()}>
+                        <div className="md:text-lg text-base py-10 text-white space-y-2 px-5 lg:px-6 text-wrap pb-10 text-justify  hyphens-auto md:hyphens-none">
+                            <p className="indent-12">Hi, I’m Syed Faizan, a Computer Science graduate and Software Developer. I am committed to developing efficient, scalable solutions and keeping my skills aligned with the latest industry trends. I take a methodical approach to problem-solving and value quality in every project. In my spare time, I enjoy football and gaming, which enhance my critical thinking and strategy skills.</p>
+                            <div onClick={() => handleCopy()} className="flex flex-col justify-center md:space-y-0 space-y-2 md:justify-between md:flex-row ">
                                 <TooltipProvider>
-                                    <Tooltip>
+                                    <Tooltip delayDuration={400}>
                                         <TooltipTrigger asChild>
                                             <span className="font-bold cursor-pointer text-sm md:text-lg">My Email: <span className="underline">contact@syedfaizan.in</span></span>
                                         </TooltipTrigger>
@@ -38,6 +38,14 @@ export function Profile() {
                                         </TooltipContent>
                                     </Tooltip>
                                 </TooltipProvider>
+                                <a
+                                    href="/resume.pdf"
+                                    target="_main"
+                                >
+                                    <button className=" text-sm shadow-[0_0_0_3px_#000000_inset] px-2 py-1 bg-transparent border border-white text-white  rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                        Download Resume
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
