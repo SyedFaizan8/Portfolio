@@ -2,6 +2,9 @@
 
 /.evolution
 
+# husky
+.husky/_
+
 # testing report unlighthouse
 /.unlighthouse/
 
