@@ -24,7 +24,7 @@ export default function Project() {
                             Developed a speed typing platform with 15s and 60s tests, real-time analytics, user profiles, WPM tracking, test history, and leaderboards. Utilized Next.js, TurboRepo, Prisma, PostgreSQL, JWT, Cloudflare Turnstile, and Upstash Redis.
                         </p>
                         <a
-                            href="https://velocitype.syedfaizan.in"
+                            href="https://velocitype.live"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="relative group/btn flex items-center justify-start px-2 space-x-1  mt-4 text-white rounded-md w-56 h-8 font-medium bg-zinc-700 shadow-[0px_0px_1px_1px_var(--neutral-800)]"

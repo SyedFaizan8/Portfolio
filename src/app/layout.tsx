@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Syed Faizan",
     description: "Explore Faizan\'s portfolio showcasing projects and skills in software development. Discover a fresh perspective and connect for exciting opportunities.",
-    images: ["https://www.syedfaizan.in/opengraph_image.jpg"],
+    images: ["https://www.syedfaizan.in/opengraph-image.jpg"],
     url: "https://www.syedfaizan.in",
     type: 'website',
     siteName: "syedfaizan",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Syed Faizan",
     description: "Explore Faizan\'s portfolio showcasing projects and skills in software development. Discover a fresh perspective and connect for exciting opportunities.",
-    images: ["https://www.syedfaizan.in/opengraph_image.jpg"],
+    images: ["https://www.syedfaizan.in/opengraph-image.jpg"],
     card: "summary_large_image",
     site: "@SyedFaizan",
   },
